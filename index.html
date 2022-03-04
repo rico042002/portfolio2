@@ -11,25 +11,25 @@
     <!-- Header -->
     <header>
         <a href="#" class="logo">Portfolio</a>
-        <div class="toggle"></div>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Testimonials</a></li>
-            <li><a href="#">Contact</a></li>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="menu">
+            <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu();">About</a></li>
+            <li><a href="#service" onclick="toggleMenu();">Services</a></li>
+            <li><a href="#work" onclick="toggleMenu();">Work</a></li>
+            <li><a href="#testi" onclick="toggleMenu();">Testimonials</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
         </ul>
     </header>
- <section class="banner">
+ <section class="banner" id="home">
      <div class="textBx">
         <h2>Rico<br><span>Miller</span></h2>
         <h3>Full Stack Web Development</h3>
-        <a href="#" class="btn">About Me</a>
+        <a href="#about" class="btn">About Me</a>
      </div>
  </section>
  <!-- About -->
- <section class="about">
+ <section class="about" id="about">
      <div class="heading">
          <h2>About Me</h2>
      </div>
@@ -44,7 +44,7 @@
      </div>
  </section>
  <!-- Services -->
- <section class="services">
+ <section class="services" id="service">
      <div class="heading white">
          <h2>Our Services</h2>
          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -83,7 +83,7 @@
      </div>
  </section>
  <!-- Work -->
- <section class="work">
+ <section class="work" id="work">
      <div class="heading">
          <h2>Our Latest Work</h2>
          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, distinctio?</p>
@@ -107,7 +107,7 @@
     </div>
  </section>
  <!-- Testimonials -->
- <section class="testimonial">
+ <section class="testimonial" id="testi">
      <div class="heading">
          <h2>Testimonials</h2>
          <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
@@ -124,7 +124,7 @@
      </div>
  </section>
  <!-- Contact -->
- <section class="contact">
+ <section class="contact" id="contact">
     <div class="heading white">
         <h2>Contact Us</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
@@ -167,6 +167,10 @@
         </div>
     </div>
  </section>
+
+ <div class="copyright">
+     <p>Copyright &copy; 2022 Designed by Online Tutorials Developed by <a href="https://twitter.com/rico042002">@Rico042002</a></p>
+ </div>
  <script src="/script.js"></script>
  <script src="https://use.fontawesome.com/77c91b7a8e.js"></script>
 </body>
